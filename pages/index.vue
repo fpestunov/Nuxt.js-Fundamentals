@@ -3,22 +3,22 @@
     <div>
       <logo />
       <h1 class="title">
-        nuxt-fundamentals
+        nuxt app
       </h1>
       <h2 class="subtitle">
-        My first-rate Nuxt.js project
+        My first Nuxt.js project
       </h2>
       <div class="links">
-        <a
+      <ul>
+        <li><a
           href="https://nuxtjs.org/"
           target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
+        >Documentation</a></li>
+        <li><a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
-          class="button--grey"
-        >GitHub</a>
+        >GitHub</a></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -64,5 +64,6 @@ export default {
 
 .links {
   padding-top: 15px;
+  text-align: left;
 }
 </style>

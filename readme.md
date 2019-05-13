@@ -54,3 +54,15 @@ About Yarn:
 - https://github.com/yarnpkg/yarn
 
 Start Nuxt `yarn dev`
+
+## Guided Nuxt.js Project Tour
+
+In this lesson, we'll show you around in our newly created Nuxt project.
+
+Please note that each directory includes a readme file, that explains what the directory is. You can safely delete the directories of the features you do not need.
+
+## Customize the home page
+
+In this lesson, we start to customize our home page of our Nuxt project.
+
+Click here to get the CSS we use in the video.
