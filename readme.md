@@ -27,3 +27,30 @@ In this lesson, we talk about some of the awesome features Nuxt.js brings to the
 - Pre Rendering
 - Code Splitting
 
+## Create Nuxt App
+
+https://nuxtjs.org/guide/installation
+
+Nuxt.js has an official scaffolding tool (create-nuxt-app), that you can use from your package manager.
+
+In this lesson, we will use yarn to set up our new Nuxt.js project, with this command:
+```
+yarn create nuxt-app nuxt-fundamentals
+```
+
+Settings:
+- Rendering Mode = Universal
+- Package Manager = Yarn
+
+You can also use npx (´npx´ is shipped by default since NPM ´5.2.0´)
+```
+npx create-nuxt-app nuxt-fundamentals
+```
+
+Install Yarn `npm install -g yarn`
+
+About Yarn:
+- https://code.fb.com/web/yarn-a-new-package-manager-for-javascript/
+- https://github.com/yarnpkg/yarn
+
+Start Nuxt `yarn dev`
