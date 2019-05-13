@@ -17,3 +17,13 @@ After this course, you will be familiar with:
 - How to deploy your apps to Heroku and Netlify
 
 This course is made together with the Chopin brothers (founders of Nuxt.js) and core member Alexander Lichter.
+
+## What is Nuxt.js?
+
+Nuxt.js is a framework for creating Vue.js applications. Its goal is to help Vue developers take advantage of top-notch technologies, fast, easy and in an organized way.
+
+In this lesson, we talk about some of the awesome features Nuxt.js brings to the table:
+- SEO with Server Side Rendering (SSR)
+- Pre Rendering
+- Code Splitting
+
