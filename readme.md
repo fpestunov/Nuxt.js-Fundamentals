@@ -66,3 +66,13 @@ Please note that each directory includes a readme file, that explains what the d
 In this lesson, we start to customize our home page of our Nuxt project.
 
 Click here to get the CSS we use in the video.
+
+## 5. Nuxt.js Page Components
+
+In this lesson, we will learn how to create new pages in a Nuxt.js application. We also see a real-world example of why you should always use multi-worded names on your components.
+
+- change layouts\default.vue, its like vue.app;
+- add new page - pages\post.vue
+- test it http://localhost:3000/post
+
+
