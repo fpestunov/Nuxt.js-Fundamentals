@@ -75,4 +75,13 @@ In this lesson, we will learn how to create new pages in a Nuxt.js application. 
 - add new page - pages\post.vue
 - test it http://localhost:3000/post
 
+## 6. Global CSS
 
+While scoped styles are handy, they cannot solve all our CSS needs. You often need to have a set of global CSS rules to take care of your fundamental styling needs.
+
+Luckily Nuxt.js has a very elegant solution that allows us to inject global CSS in our project directly from the config file. Whether it is a custom CSS file from your assets directory or an NPM package.
+
+- add assets/style.css
+- move global styles to this file
+- add filepath to style.css in /nuxt.config.js
+- after changes was made you have to restart server `yarn run dev`
