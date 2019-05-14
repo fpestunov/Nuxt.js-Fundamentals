@@ -85,3 +85,10 @@ Luckily Nuxt.js has a very elegant solution that allows us to inject global CSS 
 - move global styles to this file
 - add filepath to style.css in /nuxt.config.js
 - after changes was made you have to restart server `yarn run dev`
+
+## 7. Adding a Navbar to Nuxt Apps
+
+In this lesson, we're exploring where to put your navbar and other parts of your application that will be present on all pages.
+
+- add components/Navbar.vue
+- add navbar to layouts/default.vue
