@@ -35,6 +35,15 @@
         id: this.$route.params.id
       }
     },
+    head () {
+      return {
+        title: this.post.title,
+        meta: [
+          { name: 'twitter:title', content: this.post.title},
+          { name: 'twitter:description', content: this.post.content}
+        ]        
+      }
+    },
     computed: {
       post () {
         // return this.posts.find(post => post.id === this.id)

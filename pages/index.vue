@@ -44,6 +44,15 @@ export default {
   components: {
     Logo
   },
+  head () {
+    return {
+      title: 'Home Page +',
+      meta: [
+        { name: 'twitter:title', content: 'Nuxt Fundamentals'},
+        { name: 'twitter:description', content: 'Nuxt + Vue = 🍕'}
+      ]      
+    }
+  },
   computed: {
     posts () {
       return this.$store.state.posts.all

@@ -113,3 +113,8 @@ Another great feature of Nuxt.js is that it supports [Vuex](https://vuex.vuejs.o
 
 Nuxt offer 2 modes to use Vuex:
 - Modules mode (Classic);
+
+## 11. SEO and Meta Tags
+
+In this lesson, we're going to learn how Nuxt.js can make our JavaScript applications SEO friendly with pre-rendering and meta tags.
+
