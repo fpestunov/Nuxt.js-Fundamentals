@@ -106,3 +106,10 @@ In this lesson, we'll learn how to link between pages in Nuxt, with `nuxt-link`.
 If we use regular anchor tags, the application will refresh if a user clicks a link, which is not what we want in a modern single page application.
 
 Nuxt-link works without reloading page like `a href=`. Its benefit.
+
+## 10. Utilising the Vuex Store
+
+Another great feature of Nuxt.js is that it supports [Vuex](https://vuex.vuejs.org/) out of the box. In this lesson, we're learning what we need to know to work with Vuex and Nuxt.
+
+Nuxt offer 2 modes to use Vuex:
+- Modules mode (Classic);
