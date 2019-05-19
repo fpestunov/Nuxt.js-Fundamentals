@@ -118,3 +118,22 @@ Nuxt offer 2 modes to use Vuex:
 
 In this lesson, we're going to learn how Nuxt.js can make our JavaScript applications SEO friendly with pre-rendering and meta tags.
 
+## 12. Build and Serve the Nuxt.js App
+
+When our Nuxt app is ready to be deployed, we have to build our application before we can publish it on the internet. In this lesson, we're learning how to do just that.
+
+```
+yarn build
+yarn start
+```
+
+## 13. How to Deploy Nuxt.js to Heroku
+
+[Heroku](https://www.heroku.com/) is an easy and affordable service that we can use to host our Nuxt applications. In this lesson, we'll learn how to deploy our nuxt.js application to Heroku.
+
+{Learn more about deploying your Nuxt.js app to Heroku](https://nuxtjs.org/faq/heroku-deployment/)
+
+Lets go:
+- create Heroku account;
+- add App;
+- install Heroku cli;
