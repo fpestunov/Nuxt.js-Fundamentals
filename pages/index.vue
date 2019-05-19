@@ -11,6 +11,9 @@
       <div class="links">
       <ul>
         <li><a
+          href="/posts/how"
+        >Posts</a></li>
+        <li><a
           href="https://nuxtjs.org/"
           target="_blank"
         >Documentation</a></li>

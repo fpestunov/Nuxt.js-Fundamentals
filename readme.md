@@ -92,3 +92,17 @@ In this lesson, we're exploring where to put your navbar and other parts of your
 
 - add components/Navbar.vue
 - add navbar to layouts/default.vue
+
+## 8. Dynamic Routes
+
+In this Nuxt.js lesson, we're looking into the router and dynamic routes. When we are working with dynamic content we need to pass the ID (or similar) of the content we would like to visit.
+
+Luckily, Nuxt handles this automagically for us.
+
+## 9. Linking Between Pages
+
+In this lesson, we'll learn how to link between pages in Nuxt, with `nuxt-link`.
+
+If we use regular anchor tags, the application will refresh if a user clicks a link, which is not what we want in a modern single page application.
+
+Nuxt-link works without reloading page like `a href=`. Its benefit.
