@@ -18,7 +18,26 @@ After this course, you will be familiar with:
 
 This course is made together with the Chopin brothers (founders of Nuxt.js) and core member Alexander Lichter.
 
-## What is Nuxt.js?
+## a. CSR and SSR
+
+Смотри диаграмму `csr-ssr.png`.
+
+CSR - client side rendering
+1. делаем запрос к серверу
+2. получаем "пустой" html, в котором ссылки на дополнительные ресурсы
+3. скачиваем JS bundle (они сжатые)
+4. render-им страницу и приложение
+Минус: СЕО роботы не видят контент и чуть дольше грузится
+
+SSR - server side rendering (в целом это быстрее)
+1. делаем запрос к серверу
+2. получаем почти готовый html, уже можно работать
+3. в фоне докачиваем JS bundle (они сжатые), их меньше и грузит быстрее
+4. render-им страницу и приложение, быстрее получаем приложение
+Далее он работает динамически, без перезагрузки страниц.
+
+
+## 1. What is Nuxt.js?
 
 Nuxt.js is a framework for creating Vue.js applications. Its goal is to help Vue developers take advantage of top-notch technologies, fast, easy and in an organized way.
 
@@ -27,11 +46,14 @@ In this lesson, we talk about some of the awesome features Nuxt.js brings to the
 - Pre Rendering
 - Code Splitting
 
+Nuxt = Vue + Vue-router + Vuex
+
 ## Create Nuxt App
 
 https://nuxtjs.org/guide/installation
 
 Nuxt.js has an official scaffolding tool (create-nuxt-app), that you can use from your package manager.
+Такой же установочный модуль есть у React.
 
 In this lesson, we will use yarn to set up our new Nuxt.js project, with this command:
 ```
@@ -39,13 +61,19 @@ yarn create nuxt-app nuxt-fundamentals
 ```
 
 Settings:
-- Rendering Mode = Universal
+- Rendering Mode = Universal (= Server Side Rendering) 
 - Package Manager = Yarn
 
 You can also use npx (´npx´ is shipped by default since NPM ´5.2.0´)
 ```
+npx -v
 npx create-nuxt-app nuxt-fundamentals
 ```
+
+Что такое `npx`? Это новая утилита Node.js. Из команды выше она установит глобально create-nuxt-app, потом создаст наше приложение и потом удалит create-nuxt-app.
+Раньше нам надо было глобально поставить create-nuxt-app, а потом создавать приложения.
+
+При установке можно выбрать любой серверный фреймворк.
 
 Install Yarn `npm install -g yarn`
 
@@ -53,13 +81,30 @@ About Yarn:
 - https://code.fb.com/web/yarn-a-new-package-manager-for-javascript/
 - https://github.com/yarnpkg/yarn
 
-Start Nuxt `yarn dev`
+Start Nuxt `yarn dev` (у меня генерируется в 1.5 раза дольше, чем на МакБук-Про - 5 сек против 3.2 сек)
 
 ## Guided Nuxt.js Project Tour
 
 In this lesson, we'll show you around in our newly created Nuxt project.
 
 Please note that each directory includes a readme file, that explains what the directory is. You can safely delete the directories of the features you do not need.
+
+Обзор папок:
+- `.nuxt` - системная папка
+- `nuxt.config.js` - главный файл, кт конфигурирует приложение
+
+Нет файла index.html, почему? Потому что он собирается автоматически из настроек pkg.name - берет имя из package.json
+
+Важно! Исходники страницы уже сгенерированы (Ctrl+U) отличается от Инспектора кода (Ctrl+Shift+I) 
+
+Давайте поменяем `universal` на `spa` в файле `nuxt.config.js` и теперь будет генерироваться только Клиент без Сервера.
+
+
+- ``
+- ``
+- ``
+- ``
+- ``
 
 ## Customize the home page
 
@@ -137,3 +182,10 @@ Lets go:
 - create Heroku account;
 - add App;
 - install Heroku cli;
+
+## 14. How to Deploy Nuxt.js to Netlify
+
+A cool feature of Nuxt is that it can generate a static version of your application which you can deploy without the need of a server. This means that you can host your application in a service like Netlify or GitHub pages which are actually free even when you have a ton of traffic.
+
+In this lesson, we're learning how to pre-render our application and deploying it to Netlify. Pre-rendering makes our application load faster, it improves SEO and can actually reduce our hosting costs drastically.
+
